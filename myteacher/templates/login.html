@@ -1,0 +1,32 @@
+{% load static %}
+<html>
+<head>
+    <title>VEAR LOGIN</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="{% static 'js/alert.js' %}"></script>
+</head>
+<body>
+<div>
+<h1>WELCOME TO VEAR LOGIN</h1>
+<!--<button id="signup" onclick="signup_redirect()">signup</button>-->
+</div>
+<div>
+<!--<button id="home",onclick="home_redirect()">HOME</button>-->
+</div>
+<div>
+    <p><label>username</label>
+    <input type="text" id="username"></p>
+    <p><label>password</label>
+    <input type="password" id="password"></p>
+    <input type="submit" value="SUBMIT" id="submit">
+</div>
+</body>
+<script type="text/javascript">
+      $("#submit").click(function(){
+            var user=$("#username").val();
+            var pass=$("#password").val();
+            location.href='/home';
+            });
+
+</script>
+</html>
